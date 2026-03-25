@@ -46,8 +46,13 @@ public class MusicaService implements IMusicaService {
 		return dao.findByGeneroIgnoreCase(genero);
 	}
 		
-		
+	public List<Musica> buscarPorDiscos(int discos) {
+		return dao.findByDiscos(discos);
+	}
+	
 	public Musica buscarPorNombre(String nombre) {
 		return dao.findByNombreIgnoreCase(nombre);
 	}
+	
+	
 }
